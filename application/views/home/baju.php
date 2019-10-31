@@ -46,7 +46,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 550000</h4>
+                                <h4>Harga 55.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 850000</h4>
+                                <h4>Harga 85.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 80000</h4>
+                                <h4>Harga 80.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 950000</h4>
+                                <h4>Harga 95.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 750000</h4>
+                                <h4>Harga 75.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 1000000</h4>
+                                <h4>Harga 100.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 80000</h4>
+                                <h4>Harga 80.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                                 </a>
                             </div>
                             <div class="team-content text-center">
-                                <h4>Harga 900000</h4>
+                                <h4>Harga 90.000</h4>
                                 <button  type="button" class="btn btn-primary"> Detail </button>
                             </div>
                         </div>
