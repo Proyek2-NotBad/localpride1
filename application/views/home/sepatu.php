@@ -47,12 +47,12 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="baju.html">T-Shirt</a></li>
-          <li><a href="bag.html">Bag</a></li>
-          <li><a href="shoes.html">Shoes</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </nav>
+          <li class="active"><a href="<?= base_url(); ?>Home/awal">  Home</a></li>
+          <li class="active"><a href="<?= base_url(); ?>Home/baju">  Baju</a></li>
+          <li class="active"><a href="<?= base_url(); ?>Home/tas">  Tas</a></li>
+          <li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sepatu </a></li>
+          <li class="active"><a href="<?= base_url(); ?>Home/kontak"> Kontak </a></li>
+      </nav>
       <!-- #nav-menu-container -->
     </div>
   </header>
