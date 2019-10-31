@@ -40,19 +40,19 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/p.png" alt="" title="" /></img></a>
+        <a href="index.html"><img src="<?= base_url('assets_web/') ?>img/log.png" alt="" title="" /></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="baju.html">T-Shirt</a></li>
-          <li><a href="bag.html">Bag</a></li>
-          <li><a href="shoes.html">Shoes</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </nav>
+          <li class="active"><a href="<?= base_url(); ?>Home/awal">  Home</a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/baju">  Baju</a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/tas">  Tas</a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sepatu </a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/kontak"> Kontak </a></li>
+      </nav>
       <!-- #nav-menu-container -->
     </div>
   </header>
@@ -69,7 +69,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+            <div class="pic"><img src="<?= base_url('assets_web/') ?>img/21.jpg" alt=""></div>
             <h4>Walter White</h4>
             <span>Chief Executive Officer</span>
             <div class="social">
@@ -83,7 +83,7 @@
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+            <div class="pic"><img src="<?= base_url('assets_web/') ?>img/21.jpg" alt=""></div>
             <h4>Sarah Jhinson</h4>
             <span>Product Manager</span>
             <div class="social">
@@ -97,7 +97,7 @@
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+            <div class="pic"><img src="<?= base_url('assets_web/') ?>img/21.jpg" alt=""></div>
             <h4>William Anderson</h4>
             <span>CTO</span>
             <div class="social">
@@ -111,7 +111,7 @@
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+            <div class="pic"><img src="<?= base_url('assets_web/') ?>img/21.jpg" alt=""></div>
             <h4>Amanda Jepson</h4>
             <span>Accountant</span>
             <div class="social">

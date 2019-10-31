@@ -40,18 +40,18 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/p.png" alt="" title="" /></img></a>
+        <a href="index.html"><img src="<?= base_url('assets_web/') ?>img/log.png" alt="" title="" /></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-            <li class="menu-active"><a href="index.html">Home</a></li>
-            <li><a href="baju.html">T-Shirt</a></li>
-            <li><a href="bag.html">Bag</a></li>
-            <li><a href="shoes.html">Shoes</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+          <li class="active"><a href="<?= base_url(); ?>Home/awal">  Home</a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/baju">  Baju</a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/tas">  Tas</a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sepatu </a></li>
+					<li class="active"><a href="<?= base_url(); ?>Home/kontak"> Kontak </a></li>
       </nav>
       <!-- #nav-menu-container -->
     </div>
@@ -71,7 +71,7 @@
       <div class="row">
 
         <div class="col-lg-3 about-img">
-          <img src="img/lcl.png" alt="">
+          <img src="<?= base_url('assets_web/') ?>img/lcl.png" alt="">
         </div>
 
         <div class="col-md-6 about-content">
