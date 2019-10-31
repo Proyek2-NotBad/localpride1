@@ -56,91 +56,136 @@
       <!-- #nav-menu-container -->
     </div>
   </header>
-  <section id="portfolio">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Katalog Tas</h3>
-          <div class="section-title-divider"></div>
-          </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/27.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 1</h4>
-              <span>Alored dono par</span>
+  <div id="team" class="our-team-area area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                        <h2>Katalog Tas</h2>
+                    </div>
+                </div>
             </div>
-          </a>
-        </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/22.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 2</h4>
-              <span>Alored dono par</span>
+            <div class="row">
+                <div class="team-top">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/21.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 550000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/22.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 850000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/23.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 80000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/24.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 950000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/23.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 3</h4>
-              <span>Alored dono par</span>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/25.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 750000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/26.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 1000000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/27.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 80000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="team-img">
+                                <a href="#">
+                                    <img src="<?= base_url('assets_web/') ?>img/28.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4>Harga 900000</h4>
+                                <button  type="button" class="btn btn-primary"> Detail </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End column -->
+                </div>
             </div>
-          </a>
         </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/24.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 4</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/25.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 5</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/26.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 6</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/21.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 7</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/28.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 8</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-      </div>
     </div>
-  </section>
 
   <footer id="footer">
     <div class="container">
