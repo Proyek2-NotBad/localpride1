@@ -67,7 +67,7 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/7.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?>" href="">
             <div class="details">
               <h4>Portfolio 1</h4>
               <span>Alored dono par</span>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/2.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?> " href="">
             <div class="details">
               <h4>Portfolio 2</h4>
               <span>Alored dono par</span>
@@ -85,7 +85,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/3.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?>" href="">
             <div class="details">
               <h4>Portfolio 3</h4>
               <span>Alored dono par</span>
@@ -94,7 +94,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/4.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?>" href="">
             <div class="details">
               <h4>Portfolio 4</h4>
               <span>Alored dono par</span>
@@ -103,7 +103,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/5.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?>" href="">
             <div class="details">
               <h4>Portfolio 5</h4>
               <span>Alored dono par</span>
@@ -112,7 +112,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/6.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?>" href="">
             <div class="details">
               <h4>Portfolio 6</h4>
               <span>Alored dono par</span>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/1.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?>" href="">
             <div class="details">
               <h4>Portfolio 7</h4>
               <span>Alored dono par</span>
@@ -130,7 +130,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/8.jpg);" href="">
+          <a class="portfolio-item" img src="<?= base_url('assets_web/img/7.jpg') ?>" href="">
             <div class="details">
               <h4>Portfolio 8</h4>
               <span>Alored dono par</span>
