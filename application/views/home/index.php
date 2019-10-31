@@ -71,7 +71,7 @@
       <div class="row">
 
         <div class="col-lg-3 about-img">
-          <img src="img/lcl.png" alt="">
+          <img src="<?= base_url('assets_web/') ?>img/lcl.png" alt="">
         </div>
 
         <div class="col-md-6 about-content">
