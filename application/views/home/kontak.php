@@ -40,7 +40,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/p.png" alt="" title="" /></img></a>
+        <a href="index.html"><img src="<?= base_url('assets_web/') ?>img/log.png" alt="" title="" /></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>

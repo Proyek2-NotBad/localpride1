@@ -56,7 +56,7 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/l.png" alt="Imperial">
+          <img class="" img src="<?= base_url('assets_web/') ?>img/log.png" alt="Imperial">
         </div>
 
         <h1>Welcome to LOCAL PRIDE</h1>
