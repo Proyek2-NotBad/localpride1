@@ -62,7 +62,7 @@
         <h1>Welcome to LOCAL PRIDE</h1>
         <h2> <span class="rotating">Style With Pride</span></h2>
         <div class="actions">
-          <a href="home.html" class="btn-get-started">Belanja</a>
+        <a href="<?= base_url(); ?>Home/awal" class="btn-get-started">Belanja</a>
         </div>
       </div>
     </div>
