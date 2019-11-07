@@ -28,6 +28,7 @@ class Home extends CI_Controller {
 	public function tentang()
 	{	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/tentang');
 		$this->load->view('template_home/footer');
 	}
@@ -35,6 +36,7 @@ class Home extends CI_Controller {
 	public function baju()
 	{	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/baju');
 		$this->load->view('template_home/footer');
 	}
@@ -42,6 +44,7 @@ class Home extends CI_Controller {
 	public function sepatu()
 	{	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/sepatu');
 		$this->load->view('template_home/footer');
 	}
@@ -49,6 +52,7 @@ class Home extends CI_Controller {
 	public function kontak()
 	{	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/kontak');
 		$this->load->view('template_home/footer');
 	}
@@ -56,6 +60,7 @@ class Home extends CI_Controller {
 	public function tas()
 	{	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/tas');
 		$this->load->view('template_home/footer');
 	}
