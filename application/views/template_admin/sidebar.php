@@ -6,7 +6,7 @@
       <!-- Logo -->
       <a href="<?= base_url('Admin') ?>" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>ABK</b></span>
+        <span class="logo-mini"><b>LclPrd</b></span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"><b>LocalPride</b></span>
       </a>

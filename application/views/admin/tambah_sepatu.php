@@ -15,7 +15,7 @@
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="nama_penginapan">Kode Baju</label>
+                            <label for="nama_penginapan">Kode Sepatu</label>
                             <input type="text" class="form-control" name="nama_penginapan" placeholder="Masukkan Kode">
                         </div>
 
