@@ -25,10 +25,10 @@ class Home extends CI_Controller {
 		$this->load->view('template_home/footer');
 	}
 
-	public function awal()
+	public function tentang()
 	{	
 		$this->load->view('template_home/header');
-        $this->load->view('home/index');
+        $this->load->view('home/tentang');
 		$this->load->view('template_home/footer');
 	}
 
