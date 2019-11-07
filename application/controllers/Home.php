@@ -18,44 +18,49 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{	
+	public function index(){	
 		$this->load->view('template_home/header');
         $this->load->view('home/halaman_awal');
+	}
+
+	public function awal(){	
+		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
+        $this->load->view('home/index');
 		$this->load->view('template_home/footer');
 	}
 
-	public function tentang()
-	{	
+	public function tentang(){	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/tentang');
 		$this->load->view('template_home/footer');
 	}
 
-	public function baju()
-	{	
+	public function baju(){	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/baju');
 		$this->load->view('template_home/footer');
 	}
 
-	public function sepatu()
-	{	
+	public function sepatu(){	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/sepatu');
 		$this->load->view('template_home/footer');
 	}
 
-	public function kontak()
-	{	
+	public function kontak(){	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/kontak');
 		$this->load->view('template_home/footer');
 	}
 
-	public function tas()
-	{	
+	public function tas(){	
 		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
         $this->load->view('home/tas');
 		$this->load->view('template_home/footer');
 	}
