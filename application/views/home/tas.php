@@ -1,4 +1,5 @@
 
+
   <div id="team" class="our-team-area area-padding">
         <div class="container">
             <div class="row">
@@ -9,123 +10,103 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="team-top">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/21.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 550000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/22.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 850000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/23.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 80000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/24.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 950000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/25.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 750000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/26.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 1000000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/27.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 80000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?= base_url('assets_web/') ?>img/28.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Harga 900000</h4>
-                                <button  type="button" class="btn btn-primary"> Detail </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End column -->
-                </div>
-            </div>
-        </div>
+            <div class="container">			
+		
+		<!-- akhir jumbotron -->
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/21.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+					<p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+
+        <div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/22.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+					<p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+
+        <div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/23.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+					<p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+
+        <div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/27.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+					<p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+ 
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/25.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+					<p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+
+        <div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/26.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+					<p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+
+        <div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/27.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+					<p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+
+        <div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+            <img src="<?= base_url('assets_web/') ?>img/28.jpg" alt="">
+				<div class="caption">
+					<h3>Kode product 0921</h3>
+					<p>Harga 90.000</p>
+          <p>Ready Stok 3</p>
+					<p><a href="<?= base_url(); ?>Home/detail" class="btn btn-primary" role="button">Lihat</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
     </div>
