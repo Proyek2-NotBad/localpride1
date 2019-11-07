@@ -40,7 +40,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.html"><img src="<?= base_url('assets_web/') ?>img/log.png" alt="" title="" /></a>
+        <a href="<?= base_url(); ?>Home/tentang"><img src="<?= base_url('assets_web/') ?>img/log.png" alt="" title="" /></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
@@ -71,7 +71,7 @@
       <div class="row">
 
         <div class="col-lg-3 about-img">
-          <img src="<?= base_url('assets_web/') ?>img/lcl.png" alt="">
+          <img src="<?= base_url('assets_web/') ?>img/l.png" alt="">
         </div>
 
         <div class="col-md-6 about-content">
