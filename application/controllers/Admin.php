@@ -22,4 +22,18 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/tambah_baju');
 		$this->load->view('template_admin/footer');
     }
+
+    public function tambahsepatu(){
+    $this->load->view('template_admin/header');
+    $this->load->view('template_admin/sidebar');
+    $this->load->view('admin/tambah_sepatu');
+    $this->load->view('template_admin/footer');
+    }
+
+    public function tambahtas(){
+    $this->load->view('template_admin/header');
+    $this->load->view('template_admin/sidebar');
+    $this->load->view('admin/tambah_tas');
+    $this->load->view('template_admin/footer');
+    }
 }
