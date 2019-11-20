@@ -17,6 +17,39 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+        <style>
+.floatwa {
+position:fixed;
+bottom:0px;
+right: 0px;
+background-color:#ffffff;
+width:100%;
+z-index:1000;
+padding:2px;
+margin:auto;
+text-align:center;
+float:none;
+box-shadow: 0px -2px 10px #c0c0c0;
+}
+.tombolwa {
+border: 1px #56aa71 solid;
+background-color:#2f7e49;
+width:90%;
+padding:4px;
+text-align:center;
+margin:0;
+border-radius: 5px;
+margin:auto;
+text-align:center;
+float:none;
+}
+.floatwa a{
+color:white;
+}
+</style>
+<div class="floatwa">
+<a href="https://api.whatsapp.com/send?phone=6282132207232&amp;text=Halo%20gan,%20Saya%20mau%20order" target="_blank">
+<div class="tombolwa">ORDER VIA WHATSAPP</div></a></div>
           <div class="copyright">
             &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
           </div>
