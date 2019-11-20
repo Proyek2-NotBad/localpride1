@@ -16,4 +16,46 @@
 			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
         	</div>
 		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
+		
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
+		
+		<div class="col-sm-6 col-md-3">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
 		</div>
