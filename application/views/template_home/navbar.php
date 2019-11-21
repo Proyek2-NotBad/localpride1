@@ -12,9 +12,16 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
             <li class="active"><a href="<?= base_url(); ?>Home/awal">  Home</a></li>
+            <!-- <li class="active"><a href="<?= base_url(); ?>Home/baju">  Baju</a></li>
+            <li class="active"><a href="<?= base_url(); ?>Home/tas">  Tas</a></li>
+            <li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sepatu </a></li> -->
+            <li class="menu-has-children"><a href="">Menu Kami</a>
+            <ul>
             <li class="active"><a href="<?= base_url(); ?>Home/baju">  Baju</a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/tas">  Tas</a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sepatu </a></li>
+            </ul>
+          </li>
             <li class="active"><a href="<?= base_url(); ?>Home/kontak"> Kontak </a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/tentang">  Tentang Kami</a></li>
       </nav>
