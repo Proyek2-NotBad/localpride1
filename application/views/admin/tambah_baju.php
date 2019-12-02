@@ -115,7 +115,7 @@
 								</td>
 
 								<td>
-                                <img src="<?php echo base_url('foto/admin/tambah/'.$data['foto']) ?>" width="64" />
+                                <img src="<?php echo base_url('foto/admin/baju/'.$data['foto']) ?>" width="64" />
 								</td>
                                 <td>
                                     <?php  echo anchor('Admin/bajudelete/'.$data['id_baju'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>

@@ -62,7 +62,7 @@ class Model_baju extends CI_Model
     private function _uploadImage()
     {
 
-        $config['upload_path']          = './foto/admin/penginapan';
+        $config['upload_path']          = 'foto/admin/penginapan';
         $config['allowed_types']        = 'jpg|png';
         $config['overwrite']            = true;
         $config['max_size']             = 1024; 

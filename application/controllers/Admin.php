@@ -58,13 +58,4 @@ class Admin extends CI_Controller {
 			redirect('Admin/tambahbaju');
         }
   }
-  
-  public function databaju(){
-      $data["baju"] = $this->Model_baju->getAll();
-		$this->load->view('template_admin/header');
-		$this->load->view('template_admin/sidebar');
-		$this->load->view('admin/tambahbaju', $data);
-		$this->load->view('template_admin/footer');
-        
-    }
 }
