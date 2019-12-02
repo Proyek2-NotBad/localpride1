@@ -9,11 +9,10 @@ class Model_baju extends CI_Model
     public $stok;
     public $harga;
     public $foto = "default.jpg";
-    // public $id_jenis_penginapan;
-
+    
     public function getAll()
     {
-        return $this->db->get($this->_table)->result();
+        return $this->db->get($this->_table)->result_array();
     }
 
     public function getById($id_baju)
@@ -24,8 +23,7 @@ class Model_baju extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        // $this->id_penginapan = $post["id_penginapan"];
-        $this->kode_baju = $post["kode_baju"];
+        $this->kode_baju = $post["kode"];
         $this->stok = $post["stok"];
         $this->harga = $post["harga"];
         $this->foto = $this->_uploadImage();
@@ -37,10 +35,8 @@ class Model_baju extends CI_Model
     public function update()
     {
         $post = $this->input->post();
-        // var_dump($post);
         $this->id_baju = $post["id_baju"];
         $this->kode_baju = $post["kode_baju"];
-        // $this->id_jenis_penginapan = $post["id_jenis_penginapan"];
         $this->stok = $post["stok"];
         $this->harga = $post["harga"];
         $this->foto = $post["foto"];
@@ -66,18 +62,15 @@ class Model_baju extends CI_Model
     private function _uploadImage()
     {
 
-        $config['upload_path']          = './foto/admin/penginapan';
+        $config['upload_path']          = './foto/admin/baju';
         $config['allowed_types']        = 'jpg|png';
-        // $config['file_name']            = $this->nama_penginapan;
         $config['overwrite']            = true;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
-        // $config['max_height']           = 768;
+        $config['max_size']             = 1024; 
 
         $this->load->library('upload', $config);
 
         if ($this->upload->do_upload('foto')) {
-            return $this->upload->data("file_name".data());
+            return $this->upload->data("filename".data());
         }
 
         return "default.jpg";
@@ -88,7 +81,7 @@ class Model_baju extends CI_Model
         $img = $this->getById($id_baju);
         if ($img->foto != "default.jpg") {
             $filename = explode(".", $img->foto)[0];
-            return array_map('unlink', glob(FCPATH . "foto/admin/penginapan/$filename.*"));
+            return array_map('unlink', glob(FCPATH . "foto/admin/baju/$filename.*"));
         }
     }
 }

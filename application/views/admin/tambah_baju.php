@@ -21,12 +21,12 @@
 
                         <div class="form-group">
                             <label for="id_kota">Kode Baju</label>
-                            <input class="form-control" type="text"  name="nama_penginapan" placeholder="masukkan kode baju">
+                            <input class="form-control" type="text"  name="kode" placeholder="masukkan kode baju">
                         </div>
-
+e
                         <div class="form-group">
                             <label for="nama_penginapan">Stok</label>
-                            <input class="form-control" type="text"  name="nama_penginapan" placeholder="Masukkan stok baju">   
+                            <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok baju">   
                         </div>
 
                         <div class="form-group">
@@ -79,7 +79,7 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">List Penginapan</h3>
+                    <h3 class="box-title">List Data Baju</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
@@ -95,34 +95,32 @@
                             <th>Menu</th>
                         </tr>
                         
-						<?php
-                        foreach ($baju->result_array() as $baju):?>
-
-                        <p><?= $this->db->select('id_baju, kode_baju,stok, harga, foto'); ?></p>
 						
-							?>
+                        <?php $nomor = 1;
+                            foreach ($baju as $data) :?>
 							<tr>
-							<td><?php echo $nomor; ?></td>
+                            
+                            
+                            <td><?= $nomor++; ?></td>
 								<td>
-									<p><?= $baju['id_baju'] ?></p>
+									<p><?=  $data['id_baju']; ?></p>
 								</td>
 								<td>
-									<p><?= $baju['kode_baju'] ?></p>
+									<p><?=  $data['kode_baju'];?></p>
 								</td>
 								<td>
-									<p><?= $baju['stok'] ?></p>
+									<p><?= $data['stok'] ?></p>
 								</td>							<td>
-                                <p>Rp. <?= number_format($baju['harga']) ?></p>
+                                <p>Rp. <?= number_format($data['harga']) ?></p>
 								</td>
 
 								<td>
-                                <img src="<?php echo base_url('foto/admin/tambah/'.$baju['foto']) ?>" width="64" />
+                                <img src="<?php echo base_url('foto/admin/baju/'.$data['foto']) ?>" width="64" />
 								</td>
                                 <td>
-                                    <?php  echo anchor('Admin/bajudelete/'.$baju['id_baju'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
-                                </td>
+                                    <?php  echo anchor('Admin/bajudelete/'.$data['id_baju'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
+                            </td><?php endforeach;?>
 							</tr>
-						<?php endforeach; ?>
 
                     </table>
                 </div>
