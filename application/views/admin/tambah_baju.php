@@ -23,7 +23,7 @@
                             <label for="id_kota">Kode Baju</label>
                             <input class="form-control" type="text"  name="kode" placeholder="masukkan kode baju">
                         </div>
-e
+
                         <div class="form-group">
                             <label for="nama_penginapan">Stok</label>
                             <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok baju">   
@@ -115,7 +115,7 @@ e
 								</td>
 
 								<td>
-                                <img src="<?php echo base_url('foto/admin/baju/'.$data['foto']) ?>" width="64" />
+                                <img src="<?php echo base_url('foto/admin/tambah/'.$data['foto']) ?>" width="64" />
 								</td>
                                 <td>
                                     <?php  echo anchor('Admin/bajudelete/'.$data['id_baju'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
