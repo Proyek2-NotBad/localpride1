@@ -11,7 +11,7 @@
             </div>
 
             <div class="container">			
-		
+
 		<!-- akhir jumbotron -->
 		<div class="col-sm-6 col-md-3">
 			<div class="thumbnail">

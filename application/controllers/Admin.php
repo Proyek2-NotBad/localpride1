@@ -20,10 +20,10 @@ class Admin extends CI_Controller {
     }
     
     public function tambahbaju(){                        
-    $data["baju"] = $this->Model_baju->getAll();
+    $data['baju'] = $this->Model_baju->getAll();
     $this->load->view('template_admin/header');
 		$this->load->view('template_admin/sidebar');
-		$this->load->view('admin/tambah_baju', 'data');
+		$this->load->view('admin/tambah_baju', $data);
 		$this->load->view('template_admin/footer');
     }
 
@@ -43,8 +43,8 @@ class Admin extends CI_Controller {
 
     public function bajuadd()
     {
-        $tambah = $this->Model_baju;
-            $tambah->save();
+        $data = $this->Model_baju;
+            $data ->save();
 			$this->session->set_flashdata('success', 'Berhasil disimpan');
 			redirect('Admin/tambahbaju');        
     }
@@ -58,13 +58,4 @@ class Admin extends CI_Controller {
 			redirect('Admin/tambahbaju');
         }
   }
-  
-  public function databaju(){
-      $data["baju"] = $this->Model_baju->getAll();
-		$this->load->view('template_admin/header');
-		$this->load->view('template_admin/sidebar');
-		$this->load->view('admin/tambahbaju', $data);
-		$this->load->view('template_admin/footer');
-        
-    }
 }
