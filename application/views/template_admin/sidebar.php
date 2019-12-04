@@ -25,16 +25,16 @@
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="<?= base_url('assets_admin/') ?>dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                <span class="hidden-xs">Alexander Pierce</span>
+                <img src="<?= base_url('assets_admin/') ?>dist/img/k.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">Local Pride</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="<?= base_url('assets_admin/') ?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="<?= base_url('assets_admin/') ?>dist/img/k.jpg" class="img-circle" alt="User Image">
 
                   <p>
-                    Alexander Pierce - Web Developer
+                    Local Pride - Admin
                     <small>Member since Nov. 2012</small>
                   </p>
                 </li>
@@ -78,10 +78,10 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
           <div class="pull-left image">
-            <img src="<?= base_url('assets_admin/') ?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="<?= base_url('assets_admin/') ?>dist/img/k.jpg" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
-            <p>Alexander Pierce</p>
+            <p>Local Pride</p>
             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
           </div>
         </div>
@@ -91,7 +91,7 @@
           <li><a href="<?= base_url('Admin') ?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
 
           <!-- TAMBAH DATA -->
-          <?php if (($this->uri->segment(2) == "tambah_penginapan") || ($this->uri->segment(2) == "tambah_transport") || ($this->uri->segment(2) == "tambah_wisata")) : ?>
+          <?php if (($this->uri->segment(2) == "tambahbaju") || ($this->uri->segment(2) == "tambahsepatu") || ($this->uri->segment(2) == "tambahtas")) : ?>
             <li class="active treeview menu-open">
               <a href="#">
                 <i class="fa fa-user-plus"></i>
@@ -101,20 +101,20 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <?php if ($this->uri->segment(2) == "tambah_penginapan") : ?>
-                  <li class="active"><a href="<?= base_url('Admin/tambah_penginapan') ?>"><i class="fa fa-circle-o"></i> Data Penginapan</a></li>
-                  <li><a href="<?= base_url('Admin/tambah_transport') ?>"><i class="fa fa-circle-o"></i> Data Transport</a></li>
-                  <li><a href="<?= base_url('Admin/tambah_wisata') ?>"><i class="fa fa-circle-o"></i> Data Wisata</a></li>
+                <?php if ($this->uri->segment(2) == "tambahbaju") : ?>
+                  <li class="active"><a href="<?= base_url('Admin/tambahbaju') ?>"><i class="fa fa-circle-o"></i> Data Baju</a></li>
+                  <li><a href="<?= base_url('Admin/tambahsepatu') ?>"><i class="fa fa-circle-o"></i> Data Sepatu</a></li>
+                  <li><a href="<?= base_url('Admin/tambahtas') ?>"><i class="fa fa-circle-o"></i> Data Tas</a></li>
 
-                <?php elseif ($this->uri->segment(2) == "tambah_transport") : ?>
-                  <li><a href="<?= base_url('Admin/tambah_penginapan') ?>"><i class="fa fa-circle-o"></i> Data Penginapan</a></li>
-                  <li class="active"><a href="<?= base_url('Admin/tambah_transport') ?>"><i class="fa fa-circle-o"></i> Data Transport</a></li>
-                  <li><a href="<?= base_url('Admin/tambah_wisata') ?>"><i class="fa fa-circle-o"></i> Data Wisata</a></li>
+                <?php elseif ($this->uri->segment(2) == "tambahsepatu") : ?>
+                  <li><a href="<?= base_url('Admin/tambahbaju') ?>"><i class="fa fa-circle-o"></i> Data Baju</a></li>
+                  <li class="active"><a href="<?= base_url('Admin/tambahsepatu') ?>"><i class="fa fa-circle-o"></i> Data Sepatu</a></li>
+                  <li><a href="<?= base_url('Admin/tambahtas') ?>"><i class="fa fa-circle-o"></i> Data Tas</a></li>
 
-                <?php elseif ($this->uri->segment(2) == "tambah_wisata") : ?>
-                  <li><a href="<?= base_url('Admin/tambah_penginapan') ?>"><i class="fa fa-circle-o"></i> Data Penginapan</a></li>
-                  <li><a href="<?= base_url('Admin/tambah_transport') ?>"><i class="fa fa-circle-o"></i> Data Transport</a></li>
-                  <li class="active"><a href="<?= base_url('Admin/tambah_wisata') ?>"><i class="fa fa-circle-o"></i> Data Wisata</a></li>
+                <?php elseif ($this->uri->segment(2) == "tambahtas") : ?>
+                  <li><a href="<?= base_url('Admin/tambahbaju') ?>"><i class="fa fa-circle-o"></i> Data Baju</a></li>
+                  <li><a href="<?= base_url('Admin/tambahsepatu') ?>"><i class="fa fa-circle-o"></i> Data Sepatu</a></li>
+                  <li class="active"><a href="<?= base_url('Admin/tambahtas') ?>"><i class="fa fa-circle-o"></i> Data Tas</a></li>
                 <?php endif; ?>
               </ul>
             </li>
