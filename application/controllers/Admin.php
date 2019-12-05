@@ -11,6 +11,7 @@ class Admin extends CI_Controller {
 
         $this->load->model("Model_baju");
         $this->load->model("Model_sepatu");
+        $this->load->model("Model_tas");
     }
     
     public function index(){
@@ -37,9 +38,10 @@ class Admin extends CI_Controller {
     }
 
     public function tambahtas(){
+    $data['tas'] = $this->Model_tas->getAll();
     $this->load->view('template_admin/header');
     $this->load->view('template_admin/sidebar');
-    $this->load->view('admin/tambah_tas');
+    $this->load->view('admin/tambah_tas', $data);
     $this->load->view('template_admin/footer');
     }
 
@@ -74,6 +76,22 @@ class Admin extends CI_Controller {
         if (!isset($id_sepatu)) show_404();		
         if ($this->Model_sepatu->delete($id_sepatu)) {
 			redirect('Admin/tambahsepatu');
+        }
+    }
+
+    public function tasadd()
+    {
+        $data = $this->Model_tas;
+            $data ->save();
+			$this->session->set_flashdata('success', 'Berhasil disimpan');
+			redirect('Admin/tambahtas');        
+    }
+
+    public function tasdelete($id_tas = null)
+    {
+        if (!isset($id_tas)) show_404();		
+        if ($this->Model_tas->delete($id_tas)) {
+			redirect('Admin/tambahtas');
         }
     }
 }
