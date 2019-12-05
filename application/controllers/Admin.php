@@ -12,6 +12,7 @@ class Admin extends CI_Controller {
         $this->load->model("Model_baju");
         $this->load->model("Model_sepatu");
         $this->load->model("Model_tas");
+        $this->load->model("Model_jaket");
     }
     
     public function index(){
@@ -42,6 +43,14 @@ class Admin extends CI_Controller {
     $this->load->view('template_admin/header');
     $this->load->view('template_admin/sidebar');
     $this->load->view('admin/tambah_tas', $data);
+    $this->load->view('template_admin/footer');
+    }
+
+    public function tambahjaket(){
+    $data['jaket'] = $this->Model_jaket->getAll();
+    $this->load->view('template_admin/header');
+    $this->load->view('template_admin/sidebar');
+    $this->load->view('admin/tambah_jaket', $data);
     $this->load->view('template_admin/footer');
     }
 
@@ -92,6 +101,22 @@ class Admin extends CI_Controller {
         if (!isset($id_tas)) show_404();		
         if ($this->Model_tas->delete($id_tas)) {
 			redirect('Admin/tambahtas');
+        }
+    }
+
+    public function jaketadd()
+    {
+        $data = $this->Model_jakett;
+            $data ->save();
+			$this->session->set_flashdata('success', 'Berhasil disimpan');
+			redirect('Admin/tambahjaket');        
+    }
+
+    public function jaketdelete($id_jaket = null)
+    {
+        if (!isset($id_jaket)) show_404();		
+        if ($this->Model_tas->delete($id_jaket)) {
+			redirect('Admin/tambahjaket');
         }
     }
 }
