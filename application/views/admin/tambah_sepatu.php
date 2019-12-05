@@ -5,23 +5,28 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Data Tambah Sepatu</h3>
+                    <h3 class="box-title">Tambah sepatu</h3>
                 </div>
                 <!-- FLASH DATA PEMBERITAHUAN -->
-
-
+                <?php if ($this->session->flashdata('success')): ?>
+                    <div class="alert alert-success" role="alert">
+                        <?php echo $this->session->flashdata('success'); ?>
+                    </div>
+                <?php endif; ?> 
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="<?php echo base_url(). 'Admin/sepatuadd'; ?>" name="form"  onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
                     <div class="box-body">
+
+
                         <div class="form-group">
-                            <label for="nama_penginapan">Kode Sepatu</label>
-                            <input type="text" class="form-control" name="nama_penginapan" placeholder="Masukkan Kode">
+                            <label for="id_kota">Kode sepatu</label>
+                            <input class="form-control" type="text"  name="kode" placeholder="masukkan kode sepatu">
                         </div>
 
                         <div class="form-group">
-                            <label for="jumlah_tamu">Stok</label>
-                            <input type="text" class="form-control" name="jumlah_tamu" placeholder="Stok Ready">
+                            <label for="nama_penginapan">Stok</label>
+                            <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok sepatu">   
                         </div>
 
                         <div class="form-group">
@@ -33,9 +38,32 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="foto">Foto</label>
+                            <label for="foto">Foto *max size 1MB</label>
                             <input type="file" class="form-control" name="foto">
                         </div>
+
+                        <script>
+                                function validateForm() {
+                                var kode = document.forms["form"]["kode_sepatu"].value;
+                                var harga = document.forms["form"]["harga"].value;
+                                var stok = document.forms["form"]["stok"].value;
+
+                                    if(kode == "" && stok == "" && Harga == ""){
+                                        alert("Data sepatu Harus di Isi");
+                                        return false;
+                                    }
+                                    if (kode == "") {
+                                        alert("Kode sepatu Harus di Isi");
+                                        return false;
+                                    }else if (stok == ""){
+                                        alert("Stok Harus di Isi");
+                                        return false;
+                                    }else if (harga == ""){
+                                        alert("Harga Harus di Isi");
+                                        return false;
+                                    }
+                                }
+                        </script>
                         
                     </div>
                     <!-- /.box-body -->
@@ -51,7 +79,7 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Data Sepatu</h3>
+                    <h3 class="box-title">List Data sepatu</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
@@ -60,16 +88,43 @@
                         <tr>
                             <th style="width: 10px">#</th>
                             <th>ID </th>
-                            <th>Kode Sepatu</th>
-                            <th>Stok Barang</th>
+                            <th>Kode sepatu</th>
+                            <th>Stok</th>
                             <th>Harga</th>
                             <th>Foto</th>
-                            <th>Hapus</th>
+                            <th>Menu</th>
                         </tr>
+                        
+						
+                        <?php $nomor = 1;
+                            foreach ($sepatu as $data) :?>
+							<tr>
+                            
+                            
+                            <td><?= $nomor++; ?></td>
+								<td>
+									<p><?=  $data['id_sepatu']; ?></p>
+								</td>
+								<td>
+									<p><?=  $data['kode_sepatu'];?></p>
+								</td>
+								<td>
+									<p><?= $data['stok'] ?></p>
+								</td>							<td>
+                                <p>Rp. <?= number_format($data['harga']) ?></p>
+								</td>
+
+								<td>
+                                <img src="<?php echo base_url('foto/admin/sepatu/'.$data['foto']) ?>" width="64" />
+								</td>
+                                <td>
+                                    <?php  echo anchor('Admin/sepatudelete/'.$data['id_sepatu'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
+                            </td><?php endforeach;?>
+							</tr>
+
                     </table>
                 </div>
             </div>
         </div>
     </div>
-</section>
 </div>

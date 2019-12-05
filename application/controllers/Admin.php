@@ -9,7 +9,8 @@ class Admin extends CI_Controller {
         $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
 
-		    $this->load->model("Model_baju");
+        $this->load->model("Model_baju");
+        $this->load->model("Model_sepatu");
     }
     
     public function index(){
@@ -28,9 +29,10 @@ class Admin extends CI_Controller {
     }
 
     public function tambahsepatu(){
+    $data['sepatu'] = $this->Model_sepatu->getAll();
     $this->load->view('template_admin/header');
     $this->load->view('template_admin/sidebar');
-    $this->load->view('admin/tambah_sepatu');
+    $this->load->view('admin/tambah_sepatu', $data);
     $this->load->view('template_admin/footer');
     }
 
@@ -57,5 +59,21 @@ class Admin extends CI_Controller {
         if ($this->Model_baju->delete($id_baju)) {
 			redirect('Admin/tambahbaju');
         }
-  }
+    }
+
+    public function sepatuadd()
+    {
+        $data = $this->Model_sepatu;
+            $data ->save();
+			$this->session->set_flashdata('success', 'Berhasil disimpan');
+			redirect('Admin/tambahsepatu');        
+    }
+
+    public function sepatudelete($id_sepatu = null)
+    {
+        if (!isset($id_sepatu)) show_404();		
+        if ($this->Model_sepatu->delete($id_sepatu)) {
+			redirect('Admin/tambahsepatu');
+        }
+    }
 }
