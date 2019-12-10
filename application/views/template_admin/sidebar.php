@@ -105,17 +105,21 @@
                   <li class="active"><a href="<?= base_url('Admin/tambahbaju') ?>"><i class="fa fa-circle-o"></i> Data Baju</a></li>
                   <li><a href="<?= base_url('Admin/tambahsepatu') ?>"><i class="fa fa-circle-o"></i> Data Sepatu</a></li>
                   <li><a href="<?= base_url('Admin/tambahtas') ?>"><i class="fa fa-circle-o"></i> Data Tas</a></li>
+                  <li><a href="<?= base_url('Admin/tambahjaket') ?>"><i class="fa fa-circle-o"></i> Data Jaket</a></li>
 
                 <?php elseif ($this->uri->segment(2) == "tambahsepatu") : ?>
                   <li><a href="<?= base_url('Admin/tambahbaju') ?>"><i class="fa fa-circle-o"></i> Data Baju</a></li>
                   <li class="active"><a href="<?= base_url('Admin/tambahsepatu') ?>"><i class="fa fa-circle-o"></i> Data Sepatu</a></li>
                   <li><a href="<?= base_url('Admin/tambahtas') ?>"><i class="fa fa-circle-o"></i> Data Tas</a></li>
+                  <li><a href="<?= base_url('Admin/tambahjaket') ?>"><i class="fa fa-circle-o"></i> Data Jaket</a></li>
 
                 <?php elseif ($this->uri->segment(2) == "tambahtas") : ?>
                   <li><a href="<?= base_url('Admin/tambahbaju') ?>"><i class="fa fa-circle-o"></i> Data Baju</a></li>
                   <li><a href="<?= base_url('Admin/tambahsepatu') ?>"><i class="fa fa-circle-o"></i> Data Sepatu</a></li>
                   <li class="active"><a href="<?= base_url('Admin/tambahtas') ?>"><i class="fa fa-circle-o"></i> Data Tas</a></li>
-                <?php endif; ?>
+                  <li><a href="<?= base_url('Admin/tambahjaket') ?>"><i class="fa fa-circle-o"></i> Data Jaket</a></li>
+
+                  <?php endif; ?>
               </ul>
             </li>
             </li>
@@ -132,6 +136,7 @@
                 <li><a href="<?= base_url('Admin/tambahbaju') ?>"><i class="fa fa-circle-o"></i> Data Baju</a></li>
                 <li><a href="<?= base_url('Admin/tambahsepatu') ?>"><i class="fa fa-circle-o"></i> Data Sepatu</a></li>
                 <li><a href="<?= base_url('Admin/tambahtas') ?>"><i class="fa fa-circle-o"></i> Data Tas</a></li>
+                <li><a href="<?= base_url('Admin/tambahjaket') ?>"><i class="fa fa-circle-o"></i> Data Jaket</a></li>
               </ul>
             </li>
             </li>
