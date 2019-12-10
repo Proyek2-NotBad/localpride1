@@ -106,7 +106,7 @@ class Admin extends CI_Controller {
 
     public function jaketadd()
     {
-        $data = $this->Model_jakett;
+        $data = $this->Model_jaket;
             $data ->save();
 			$this->session->set_flashdata('success', 'Berhasil disimpan');
 			redirect('Admin/tambahjaket');        
