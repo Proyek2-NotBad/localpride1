@@ -1,8 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 class Model_jaket extends CI_Model
 {
-
-
     private $_table = "jaket";
     public $id_jaket;
     public $kode_jaket;

@@ -18,8 +18,6 @@
             <li class="active"><a href="<?= base_url(); ?>Home/tas">  Tas</a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sepatu </a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/jaket"> Jaket</a></li>
-            <li class="active"><a href="<?= base_url(); ?>Home/tas">  Polo</a></li>
-            <li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sendal</a></li>
             </ul>
           </li>
             <li class="active"><a href="<?= base_url(); ?>Home/kontak"> Kontak </a></li>
