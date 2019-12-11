@@ -27,7 +27,7 @@
 
         <div class="col-sm-6 col-md-3">
 			<div class="thumbnail">
-            <img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="">
+            <img src="<?= base_url('assets_web/') ?>img/17.jpg" alt="">
 				<div class="caption">
 					<h3>Kode product 0332</h3>
 					<p>Harga 90.000</p>
@@ -39,7 +39,7 @@
 
         <div class="col-sm-6 col-md-3">
 			<div class="thumbnail">
-            <img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="">
+            <img src="<?= base_url('assets_web/') ?>img/18.jfif" alt="">
 				<div class="caption">
 					<h3>Kode product 0921</h3>
 					<p>Harga 90.000</p>
@@ -51,7 +51,7 @@
 
         <div class="col-sm-6 col-md-3">
 			<div class="thumbnail">
-            <img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="">
+            <img src="<?= base_url('assets_web/') ?>img/188.jfif" alt="">
 				<div class="caption">
 					<h3>Kode product 0921</h3>
 					<p>Harga 90.000</p>
@@ -63,7 +63,7 @@
  
 		<div class="col-sm-6 col-md-3">
 			<div class="thumbnail">
-            <img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="">
+            <img src="<?= base_url('assets_web/') ?>img/11.jfif" alt="">
 				<div class="caption">
 					<h3>Kode product 0921</h3>
 					<p>Harga 90.000</p>
@@ -75,7 +75,7 @@
 
         <div class="col-sm-6 col-md-3">
 			<div class="thumbnail">
-            <img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="">
+            <img src="<?= base_url('assets_web/') ?>img/12.jfif" alt="">
 				<div class="caption">
 					<h3>Kode product 0921</h3>
 					<p>Harga 90.000</p>
@@ -87,7 +87,7 @@
 
         <div class="col-sm-6 col-md-3">
 			<div class="thumbnail">
-            <img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="">
+            <img src="<?= base_url('assets_web/') ?>img/15.jfif" alt="">
 				<div class="caption">
 					<h3>Kode product 0921</h3>
 					<p>Harga 90.000</p>
@@ -99,7 +99,7 @@
 
         <div class="col-sm-6 col-md-3">
 			<div class="thumbnail">
-            <img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="">
+            <img src="<?= base_url('assets_web/') ?>img/14.jfif" alt="">
 				<div class="caption">
 					<h3>Kode product 0921</h3>
 					<p>Harga 90.000</p>

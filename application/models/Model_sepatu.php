@@ -62,7 +62,7 @@ class Model_sepatu extends CI_Model
     private function _uploadImage()
     {
 
-        $config['upload_path']          = 'foto/admin/penginapan';
+        $config['upload_path']          = 'foto/admin/sepatu';
         $config['allowed_types']        = 'jpg|png';
         $config['overwrite']            = true;
         $config['max_size']             = 1024; 
@@ -70,7 +70,7 @@ class Model_sepatu extends CI_Model
         $this->load->library('upload', $config);
 
         if ($this->upload->do_upload('foto')) {
-            return $this->upload->data("file_name".data());
+            return $this->upload->data("file_name");
         }
 
         return "default.jpg";
