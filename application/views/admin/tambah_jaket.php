@@ -5,7 +5,7 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Tambah sepatu</h3>
+                    <h3 class="box-title">Tambah jaket</h3>
                 </div>
                 <!-- FLASH DATA PEMBERITAHUAN -->
                 <?php if ($this->session->flashdata('success')): ?>
@@ -15,18 +15,18 @@
                 <?php endif; ?> 
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form action="<?php echo base_url(). 'Admin/sepatuadd'; ?>" name="form"  onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
+                <form action="<?php echo base_url(). 'Admin/jaketadd'; ?>" name="form"  onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
                     <div class="box-body">
 
 
                         <div class="form-group">
-                            <label for="id_kota">Kode sepatu</label>
-                            <input class="form-control" type="text"  name="kode" placeholder="masukkan kode sepatu">
+                            <label for="id_kota">Kode jaket</label>
+                            <input class="form-control" type="text"  name="kode" placeholder="masukkan kode jaket">
                         </div>
 
                         <div class="form-group">
                             <label for="nama_penginapan">Stok</label>
-                            <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok sepatu">   
+                            <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok jaket">   
                         </div>
 
                         <div class="form-group">
@@ -44,16 +44,16 @@
 
                         <script>
                                 function validateForm() {
-                                var kode = document.forms["form"]["kode_sepatu"].value;
+                                var kode = document.forms["form"]["kode_jaket"].value;
                                 var harga = document.forms["form"]["harga"].value;
                                 var stok = document.forms["form"]["stok"].value;
 
                                     if(kode == "" && stok == "" && Harga == ""){
-                                        alert("Data sepatu Harus di Isi");
+                                        alert("Data jaket Harus di Isi");
                                         return false;
                                     }
                                     if (kode == "") {
-                                        alert("Kode sepatu Harus di Isi");
+                                        alert("Kode jaket Harus di Isi");
                                         return false;
                                     }else if (stok == ""){
                                         alert("Stok Harus di Isi");
@@ -79,7 +79,7 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">List Data sepatu</h3>
+                    <h3 class="box-title">List Data jaket</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
@@ -88,7 +88,7 @@
                         <tr>
                             <th style="width: 10px">#</th>
                             <th>ID </th>
-                            <th>Kode sepatu</th>
+                            <th>Kode jaket</th>
                             <th>Stok</th>
                             <th>Harga</th>
                             <th>Foto</th>
@@ -97,16 +97,16 @@
                         
 						
                         <?php $nomor = 1;
-                            foreach ($sepatu as $data) :?>
+                            foreach ($jaket as $data) :?>
 							<tr>
                             
                             
                             <td><?= $nomor++; ?></td>
 								<td>
-									<p><?=  $data['id_sepatu']; ?></p>
+									<p><?=  $data['id_jaket']; ?></p>
 								</td>
 								<td>
-									<p><?=  $data['kode_sepatu'];?></p>
+									<p><?=  $data['kode_jaket'];?></p>
 								</td>
 								<td>
 									<p><?= $data['stok'] ?></p>
@@ -115,10 +115,10 @@
 								</td>
 
 								<td>
-                                <img src="<?php echo base_url('foto/admin/sepatu/'.$data['foto']) ?>" width="64" />
+                                <img src="<?php echo base_url('foto/admin/jaket/'.$data['foto']) ?>" width="64" />
 								</td>
                                 <td>
-                                    <?php  echo anchor('Admin/sepatudelete/'.$data['id_sepatu'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
+                                    <?php  echo anchor('Admin/jaketdelete/'.$data['id_jaket'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
                             </td><?php endforeach;?>
 							</tr>
 
