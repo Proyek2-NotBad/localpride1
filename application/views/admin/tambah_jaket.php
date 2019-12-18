@@ -63,7 +63,7 @@
                                         alert("Stok Harus di Isi");
                                         return false;
                                     }else if (ukuran == ""){
-                                        alert("Stok Harus di Isi");
+                                        alert("Ukuran Harus di Isi");
                                         return false;
                                     }else if (harga == ""){
                                         alert("Harga Harus di Isi");
