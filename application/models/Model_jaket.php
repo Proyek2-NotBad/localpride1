@@ -5,6 +5,7 @@ class Model_jaket extends CI_Model
     public $id_jaket;
     public $kode_jaket;
     public $stok;
+    public $ukuran;
     public $harga;
     public $foto = "default.jpg";
     
@@ -23,6 +24,7 @@ class Model_jaket extends CI_Model
         $post = $this->input->post();
         $this->kode_jaket = $post["kode"];
         $this->stok = $post["stok"];
+        $this->ukuran = $post["ukuran"];
         $this->harga = $post["harga"];
         $this->foto = $this->_uploadImage();
 
@@ -36,6 +38,7 @@ class Model_jaket extends CI_Model
         $this->id_jaket = $post["id_jaket"];
         $this->kode_jaket = $post["kode_jaket"];
         $this->stok = $post["stok"];
+        $this->ukuran = $post["ukuran"];
         $this->harga = $post["harga"];
         $this->foto = $post["foto"];
 
@@ -60,7 +63,7 @@ class Model_jaket extends CI_Model
     private function _uploadImage()
     {
 
-        $config['upload_path']          = 'foto/admin/penginapan';
+        $config['upload_path']          = 'foto/admin/jaket';
         $config['allowed_types']        = 'jpg|png';
         $config['overwrite']            = true;
         $config['max_size']             = 1024; 
@@ -68,7 +71,7 @@ class Model_jaket extends CI_Model
         $this->load->library('upload', $config);
 
         if ($this->upload->do_upload('foto')) {
-            return $this->upload->data("file_name".data());
+            return $this->upload->data("file_name");
         }
 
         return "default.jpg";
