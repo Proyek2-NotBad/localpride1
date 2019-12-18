@@ -14,6 +14,7 @@ class Admin extends CI_Controller {
         $this->load->model("Model_tas");
         $this->load->model("Model_jaket");
         $this->load->model("Model_sandal");
+        $this->load->model("Model_polo");
     }
     
     public function index(){
@@ -58,19 +59,15 @@ class Admin extends CI_Controller {
             $this->load->view('template_admin/footer');
         }
     
-        public function sandaladd()
-        {
+    public function sandaladd(){
             $data = $this->Model_sandal;
                 $data ->save();
                 $this->session->set_flashdata('success', 'Berhasil disimpan');
                 redirect('Admin/tambahsandal');        
         }
     
-        public function sandaldelete($id_sandal = null)
-        {
+    public function sandaldelete($id_sandal = null){
             if (!isset($id_sandal)) show_404();
-    
-            
             if ($this->Model_sandal->delete($id_sandal)) {
                 redirect('Admin/tambahsandal');
             }
@@ -147,5 +144,28 @@ class Admin extends CI_Controller {
 			redirect('Admin/tambahjaket');
         }
     }    
+
+    public function tambahpolo(){
+        $data['polo'] = $this->Model_polo->getAll();
+        $this->load->view('template_admin/header');
+        $this->load->view('template_admin/sidebar');
+        $this->load->view('admin/tambah_polo', $data);
+        $this->load->view('template_admin/footer');
+        }
+    
+        public function poloadd(){
+            $data = $this->Model_polo;
+                $data ->save();
+                $this->session->set_flashdata('success', 'Berhasil disimpan');
+                redirect('Admin/tambahpolo');        
+        }
+    
+        public function polodelete($id_polo = null)
+        {
+            if (!isset($id_polo)) show_404();		
+            if ($this->Model_polo->delete($id_polo)) {
+                redirect('Admin/tambahpolo');
+            }
+        }
     
 }

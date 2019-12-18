@@ -31,7 +31,7 @@
 
                         <div class="form-group">
                             <label for="ukuran">Ukuran</label>
-                            <input class="form-control" type="text"  name="ukuran" placeholder="Masukkan stok sepatu">   
+                            <input class="form-control" type="text"  name="ukuran" placeholder="Masukkan ukuran sepatu">   
                         </div>
 
                         <div class="form-group">

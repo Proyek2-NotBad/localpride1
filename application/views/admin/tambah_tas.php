@@ -31,7 +31,7 @@
 
                         <div class="form-group">
                             <label for="ukuran">Ukuran</label>
-                            <input class="form-control" type="text"  name="ukuran" placeholder="Masukkan stok tas">   
+                            <input class="form-control" type="text"  name="ukuran" placeholder="Masukkan ukuran tas">   
                         </div>
 
                         <div class="form-group">

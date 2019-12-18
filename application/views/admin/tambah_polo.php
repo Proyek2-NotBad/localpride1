@@ -5,7 +5,7 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Tambah Sandal</h3>
+                    <h3 class="box-title">Tambah Polo</h3>
                 </div>
                 <!-- FLASH DATA PEMBERITAHUAN -->
                 <?php if ($this->session->flashdata('success')): ?>
@@ -15,23 +15,23 @@
                 <?php endif; ?> 
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form action="<?php echo base_url(). 'Admin/sandaladd'; ?>" name="form"  onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
+                <form action="<?php echo base_url(). 'Admin/poloadd'; ?>" name="form"  onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
                     <div class="box-body">
 
 
                         <div class="form-group">
-                            <label for="kode">Kode sandal</label>
-                            <input class="form-control" type="text"  name="kode" placeholder="masukkan kode sandal">
+                            <label for="kode">Kode polo</label>
+                            <input class="form-control" type="text"  name="kode" placeholder="masukkan kode polo">
                         </div>
 
                         <div class="form-group">
                             <label for="stok">Stok</label>
-                            <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok sandal">   
+                            <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok polo">   
                         </div>
 
                         <div class="form-group">
                             <label for="ukuran">Ukuran</label>
-                            <input class="form-control" type="text"  name="ukuran" placeholder="Masukkan ukuran sandal">   
+                            <input class="form-control" type="text"  name="ukuran" placeholder="Masukkan ukuran polo">   
                         </div>
 
                         <div class="form-group">
@@ -49,17 +49,17 @@
 
                         <script>
                                 function validateForm() {
-                                var kode = document.forms["form"]["kode_sandal"].value;
+                                var kode = document.forms["form"]["kode_polo"].value;
                                 var harga = document.forms["form"]["harga"].value;
                                 var stok = document.forms["form"]["stok"].value;
-                                var ukuran = document.forms["form"]["ukuran"].value;
+                                var stok = document.forms["form"]["ukuran"].value;
 
                                     if(kode == "" && stok == "" && Harga == "" && ukuran == ""){
-                                        alert("Data sandal Harus di Isi");
+                                        alert("Data polo Harus di Isi");
                                         return false;
                                     }
                                     if (kode == "") {
-                                        alert("Kode sandal Harus di Isi");
+                                        alert("Kode polo Harus di Isi");
                                         return false;
                                     }else if (stok == ""){
                                         alert("Stok Harus di Isi");
@@ -88,7 +88,7 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">List Data Sandal</h3>
+                    <h3 class="box-title">List Data Polo</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
@@ -97,7 +97,7 @@
                         <tr>
                             <th style="width: 10px">#</th>
                             <th>ID </th>
-                            <th>Kode Sandal</th>
+                            <th>Kode polo</th>
                             <th>Stok</th>
                             <th>Ukuran</th>
                             <th>Harga</th>
@@ -107,31 +107,32 @@
                         
 						
                         <?php $nomor = 1;
-                            foreach ($sandal as $data) :?>
+                            foreach ($polo as $data) :?>
 							<tr>
                             
                             
                             <td><?= $nomor++; ?></td>
 								<td>
-									<p><?=  $data['id_sandal']; ?></p>
+									<p><?=  $data['id_polo']; ?></p>
 								</td>
 								<td>
-									<p><?=  $data['kode_sandal'];?></p>
+									<p><?=  $data['kode_polo'];?></p>
 								</td>
 								<td>
 									<p><?= $data['stok'] ?></p>
 								</td>
                                 <td>
 									<p><?= $data['ukuran'] ?></p>
-								</td>								<td>
+								</td>							
+                                <td>
                                 <p>Rp. <?= number_format($data['harga']) ?></p>
 								</td>
 
 								<td>
-                                <img src="<?php echo base_url('foto/admin/sandal/'.$data['foto']) ?>" width="64" />
+                                <img src="<?php echo base_url('foto/admin/polo/'.$data['foto']) ?>" width="64" />
 								</td>
                                 <td>
-                                    <?php  echo anchor('Admin/sandaldelete/'.$data['id_sandal'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
+                                    <?php  echo anchor('Admin/polodelete/'.$data['id_polo'], '<button class="btn btn-danger margin" type="button"><span class="fa fa-trash"></span> </button>'); ?>
                             </td><?php endforeach;?>
 							</tr>
 
