@@ -18,7 +18,8 @@
             <li class="active"><a href="<?= base_url(); ?>Home/tas">  Tas</a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/sepatu"> Sepatu </a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/jaket"> Jaket</a></li>
-            </ul>
+            <li class="active"><a href="<?= base_url(); ?>Home/sandal"> Sandal</a></li>
+            <li class="active"><a href="<?= base_url(); ?>Home/polo"> Polo</a></li></ul>
           </li>
             <li class="active"><a href="<?= base_url(); ?>Home/kontak"> Kontak </a></li>
             <li class="active"><a href="<?= base_url(); ?>Home/tentang">  Tentang Kami</a></li>

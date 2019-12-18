@@ -13,6 +13,8 @@ class Admin extends CI_Controller {
         $this->load->model("Model_sepatu");
         $this->load->model("Model_tas");
         $this->load->model("Model_jaket");
+        $this->load->model("Model_sandal");
+        $this->load->model("Model_polo");
     }
     
     public function index(){
@@ -28,30 +30,6 @@ class Admin extends CI_Controller {
 		$this->load->view('template_admin/sidebar');
 		$this->load->view('admin/tambah_baju', $data);
 		$this->load->view('template_admin/footer');
-    }
-
-    public function tambahsepatu(){
-    $data['sepatu'] = $this->Model_sepatu->getAll();
-    $this->load->view('template_admin/header');
-    $this->load->view('template_admin/sidebar');
-    $this->load->view('admin/tambah_sepatu', $data);
-    $this->load->view('template_admin/footer');
-    }
-
-    public function tambahtas(){
-    $data['tas'] = $this->Model_tas->getAll();
-    $this->load->view('template_admin/header');
-    $this->load->view('template_admin/sidebar');
-    $this->load->view('admin/tambah_tas', $data);
-    $this->load->view('template_admin/footer');
-    }
-
-    public function tambahjaket(){
-    $data['jaket'] = $this->Model_jaket->getAll();
-    $this->load->view('template_admin/header');
-    $this->load->view('template_admin/sidebar');
-    $this->load->view('admin/tambah_jaket', $data);
-    $this->load->view('template_admin/footer');
     }
 
     public function bajuadd()
@@ -72,6 +50,37 @@ class Admin extends CI_Controller {
         }
     }
 
+    
+    public function tambahsandal(){                        
+        $data['sandal'] = $this->Model_sandal->getAll();
+        $this->load->view('template_admin/header');
+            $this->load->view('template_admin/sidebar');
+            $this->load->view('admin/tambah_sandal', $data);
+            $this->load->view('template_admin/footer');
+        }
+    
+    public function sandaladd(){
+            $data = $this->Model_sandal;
+                $data ->save();
+                $this->session->set_flashdata('success', 'Berhasil disimpan');
+                redirect('Admin/tambahsandal');        
+        }
+    
+    public function sandaldelete($id_sandal = null){
+            if (!isset($id_sandal)) show_404();
+            if ($this->Model_sandal->delete($id_sandal)) {
+                redirect('Admin/tambahsandal');
+            }
+        }
+
+    public function tambahsepatu(){
+    $data['sepatu'] = $this->Model_sepatu->getAll();
+    $this->load->view('template_admin/header');
+    $this->load->view('template_admin/sidebar');
+    $this->load->view('admin/tambah_sepatu', $data);
+    $this->load->view('template_admin/footer');
+    }
+
     public function sepatuadd()
     {
         $data = $this->Model_sepatu;
@@ -86,6 +95,14 @@ class Admin extends CI_Controller {
         if ($this->Model_sepatu->delete($id_sepatu)) {
 			redirect('Admin/tambahsepatu');
         }
+    }
+
+    public function tambahtas(){
+    $data['tas'] = $this->Model_tas->getAll();
+    $this->load->view('template_admin/header');
+    $this->load->view('template_admin/sidebar');
+    $this->load->view('admin/tambah_tas', $data);
+    $this->load->view('template_admin/footer');
     }
 
     public function tasadd()
@@ -103,6 +120,14 @@ class Admin extends CI_Controller {
 			redirect('Admin/tambahtas');
         }
     }
+    
+    public function tambahjaket(){
+    $data['jaket'] = $this->Model_jaket->getAll();
+    $this->load->view('template_admin/header');
+    $this->load->view('template_admin/sidebar');
+    $this->load->view('admin/tambah_jaket', $data);
+    $this->load->view('template_admin/footer');
+    }
 
     public function jaketadd()
     {
@@ -118,5 +143,29 @@ class Admin extends CI_Controller {
         if ($this->Model_tas->delete($id_jaket)) {
 			redirect('Admin/tambahjaket');
         }
-    }
+    }    
+
+    public function tambahpolo(){
+        $data['polo'] = $this->Model_polo->getAll();
+        $this->load->view('template_admin/header');
+        $this->load->view('template_admin/sidebar');
+        $this->load->view('admin/tambah_polo', $data);
+        $this->load->view('template_admin/footer');
+        }
+    
+        public function poloadd(){
+            $data = $this->Model_polo;
+                $data ->save();
+                $this->session->set_flashdata('success', 'Berhasil disimpan');
+                redirect('Admin/tambahpolo');        
+        }
+    
+        public function polodelete($id_polo = null)
+        {
+            if (!isset($id_polo)) show_404();		
+            if ($this->Model_polo->delete($id_polo)) {
+                redirect('Admin/tambahpolo');
+            }
+        }
+    
 }
