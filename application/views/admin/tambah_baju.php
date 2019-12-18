@@ -20,13 +20,18 @@
 
 
                         <div class="form-group">
-                            <label for="id_kota">Kode Baju</label>
+                            <label for="kode">Kode Baju</label>
                             <input class="form-control" type="text"  name="kode" placeholder="masukkan kode baju">
                         </div>
 
                         <div class="form-group">
-                            <label for="nama_penginapan">Stok</label>
+                            <label for="stok">Stok</label>
                             <input class="form-control" type="text"  name="stok" placeholder="Masukkan stok baju">   
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ukuran">Ukuran</label>
+                            <input class="form-control" type="text"  name="ukuran" placeholder="Masukkan stok baju">   
                         </div>
 
                         <div class="form-group">
@@ -47,8 +52,9 @@
                                 var kode = document.forms["form"]["kode_baju"].value;
                                 var harga = document.forms["form"]["harga"].value;
                                 var stok = document.forms["form"]["stok"].value;
+                                var ukuran = document.forms["form"]["ukuran"].value;
 
-                                    if(kode == "" && stok == "" && Harga == ""){
+                                    if(kode == "" && stok == "" && Harga == "" && ukuran == ""){
                                         alert("Data Baju Harus di Isi");
                                         return false;
                                     }
@@ -57,6 +63,9 @@
                                         return false;
                                     }else if (stok == ""){
                                         alert("Stok Harus di Isi");
+                                        return false;
+                                    }else if (ukuran == ""){
+                                        alert("Ukuran Harus di Isi");
                                         return false;
                                     }else if (harga == ""){
                                         alert("Harga Harus di Isi");
@@ -90,6 +99,7 @@
                             <th>ID </th>
                             <th>Kode Baju</th>
                             <th>Stok</th>
+                            <th>Ukuran</th>
                             <th>Harga</th>
                             <th>Foto</th>
                             <th>Menu</th>
@@ -110,7 +120,10 @@
 								</td>
 								<td>
 									<p><?= $data['stok'] ?></p>
-								</td>							<td>
+								</td>
+                                <td>
+									<p><?= $data['ukuran'] ?></p>
+								</td>								<td>
                                 <p>Rp. <?= number_format($data['harga']) ?></p>
 								</td>
 

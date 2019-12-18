@@ -7,6 +7,7 @@ class Model_baju extends CI_Model
     public $id_baju;
     public $kode_baju;
     public $stok;
+    public $ukuran;
     public $harga;
     public $foto = "default.jpg";
     
@@ -25,6 +26,7 @@ class Model_baju extends CI_Model
         $post = $this->input->post();
         $this->kode_baju = $post["kode"];
         $this->stok = $post["stok"];
+        $this->ukuran = $post["ukuran"];
         $this->harga = $post["harga"];
         $this->foto = $this->_uploadImage();
 
@@ -38,6 +40,7 @@ class Model_baju extends CI_Model
         $this->id_baju = $post["id_baju"];
         $this->kode_baju = $post["kode_baju"];
         $this->stok = $post["stok"];
+        $this->ukuran = $post["ukuran"];
         $this->harga = $post["harga"];
         $this->foto = $post["foto"];
 
@@ -62,7 +65,7 @@ class Model_baju extends CI_Model
     private function _uploadImage()
     {
 
-        $config['upload_path']          = 'foto/admin/penginapan';
+        $config['upload_path']          = 'foto/admin/baju';
         $config['allowed_types']        = 'jpg|png';
         $config['overwrite']            = true;
         $config['max_size']             = 1024; 
@@ -70,7 +73,7 @@ class Model_baju extends CI_Model
         $this->load->library('upload', $config);
 
         if ($this->upload->do_upload('foto')) {
-            return $this->upload->data("file_name".data());
+            return $this->upload->data("file_name");
         }
 
         return "default.jpg";
