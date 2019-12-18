@@ -71,4 +71,11 @@ class Home extends CI_Controller {
         $this->load->view('home/jaket');
 		$this->load->view('template_home/footer');
 	}
+
+	public function sandal(){	
+		$this->load->view('template_home/header');
+		$this->load->view('template_home/navbar');
+        $this->load->view('home/sandal');
+		$this->load->view('template_home/footer');
+	}
 }
