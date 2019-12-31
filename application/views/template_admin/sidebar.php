@@ -26,7 +26,7 @@
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="<?= base_url('assets_admin/') ?>dist/img/k.jpg" class="user-image" alt="User Image">
-                <span class="hidden-xs">Local Pride</span>
+                <span class="hidden-xs"><?= $this->session->userdata('email'); ?></span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
@@ -81,7 +81,7 @@
             <img src="<?= base_url('assets_admin/') ?>dist/img/k.jpg" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
-            <p>Local Pride</p>
+            <p><?= $this->session->userdata('email'); ?></p>
             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
           </div>
         </div>
@@ -175,7 +175,7 @@
           <?php endif; ?>
           <!-- LIST USER -->
          
-          <li><a href="<?= base_url('Admin/loginadmin') ?>"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+          <li><a href="<?= base_url('Auth/logout') ?>"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
         </ul>
       </section>
       <!-- /.sidebar -->
