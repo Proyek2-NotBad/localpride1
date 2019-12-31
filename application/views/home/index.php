@@ -11,52 +11,40 @@
 		<div class="container">			
 		
 		<!-- akhir jumbotron -->
-		<div class="col-sm-6 col-md-3">
+		<div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
 			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
         	</div>
 		</div>
 
-		<div class="col-sm-6 col-md-3">
+		<div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
-			<a href="<?= base_url(); ?>Home/tas"><img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="" title="" /></a>
+			<a href="<?= base_url(); ?>Home/jaket"><img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="" title="" /></a>
         	</div>
 		</div>
 
-		<div class="col-sm-6 col-md-3">
+		<div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
-			<a href="<?= base_url(); ?>Home/tas"><img src="<?= base_url('assets_web/') ?>img/21.jpg" alt="" title="" /></a>
+			<a href="<?= base_url(); ?>Home/polo"><img src="<?= base_url('assets_web/') ?>img/21.jpg" alt="" title="" /></a>
         	</div>
 		</div>
 
-		<div class="col-sm-6 col-md-3">
+		<div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
-			<a href="<?= base_url(); ?>Home/kontak"><img src="<?= base_url('assets_web/') ?>img/lcl.png" alt="" title="" /></a>
+			<a href="<?= base_url(); ?>Home/sandal"><img src="<?= base_url('assets_web/') ?>img/lcl.png" alt="" title="" /></a>
         	</div>
 		</div>
 
-		<div class="col-sm-6 col-md-3">
+		<div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
-			<a href="<?= base_url(); ?>Home/baju"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+			<a href="<?= base_url(); ?>Home/sepatu"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
+        	</div>
+		</div>
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+			<a href="<?= base_url(); ?>Home/tas"><img src="<?= base_url('assets_web/') ?>img/1.jpg" alt="" title="" /></a>
         	</div>
 		</div>
 
-		<div class="col-sm-6 col-md-3">
-			<div class="thumbnail">
-			<a href="<?= base_url(); ?>Home/tas"><img src="<?= base_url('assets_web/') ?>img/18.jpg" alt="" title="" /></a>
-        	</div>
-		</div>
-
-		<div class="col-sm-6 col-md-3">
-			<div class="thumbnail">
-			<a href="<?= base_url(); ?>Home/tas"><img src="<?= base_url('assets_web/') ?>img/21.jpg" alt="" title="" /></a>
-        	</div>
-		</div>
-
-		<div class="col-sm-6 col-md-3">
-			<div class="thumbnail">
-			<a href="<?= base_url(); ?>Home/kontak"><img src="<?= base_url('assets_web/') ?>img/lcl.png" alt="" title="" /></a>
-        	</div>
-		</div>
 		</div>
 		</div>
