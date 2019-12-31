@@ -15,6 +15,13 @@ class Admin extends CI_Controller {
         $this->load->model("Model_jaket");
         $this->load->model("Model_sandal");
         $this->load->model("Model_polo");
+        $this->load->model("Model_login");
+
+        if (!$this->session->userdata('email')) {
+			redirect(base_url('Auth/loginadmin'));
+		}else{
+            
+        }
     }
     
     public function index(){
@@ -22,6 +29,11 @@ class Admin extends CI_Controller {
 		$this->load->view('template_admin/sidebar');
 		$this->load->view('admin/index');
 		$this->load->view('template_admin/footer');
+    }
+
+    public function loginadmin()
+    {
+        $this->load->view('auth/loginadmin');
     }
     
     public function tambahbaju(){                        

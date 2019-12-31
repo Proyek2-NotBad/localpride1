@@ -38,16 +38,18 @@ class Home extends CI_Controller {
 	}
 
 	public function baju(){	
+		$data['listbaju'] = $this->db->get('baju');
 		$this->load->view('template_home/header');
 		$this->load->view('template_home/navbar');
-        $this->load->view('home/baju');
+        $this->load->view('home/baju', $data);
 		$this->load->view('template_home/footer');
 	}
 
 	public function sepatu(){	
+		$data['listsepatu'] = $this->db->get('sepatu');
 		$this->load->view('template_home/header');
 		$this->load->view('template_home/navbar');
-        $this->load->view('home/sepatu');
+        $this->load->view('home/sepatu', $data);
 		$this->load->view('template_home/footer');
 	}
 
@@ -59,30 +61,34 @@ class Home extends CI_Controller {
 	}
 
 	public function tas(){	
+		$data['listtas'] = $this->db->get('tas');
 		$this->load->view('template_home/header');
 		$this->load->view('template_home/navbar');
-        $this->load->view('home/tas');
+        $this->load->view('home/tas', $data);
 		$this->load->view('template_home/footer');
 	}
 
 	public function jaket(){	
+		$data['listjaket'] = $this->db->get('jaket');
 		$this->load->view('template_home/header');
 		$this->load->view('template_home/navbar');
-        $this->load->view('home/jaket');
+        $this->load->view('home/jaket', $data);
 		$this->load->view('template_home/footer');
 	}
 
 	public function sandal(){	
+		$data['listsandal'] = $this->db->get('sandal');
 		$this->load->view('template_home/header');
 		$this->load->view('template_home/navbar');
-        $this->load->view('home/sandal');
+        $this->load->view('home/sandal', $data);
 		$this->load->view('template_home/footer');
 	}
 
 	public function polo(){	
+		$data['listpolo'] = $this->db->get('polo');
 		$this->load->view('template_home/header');
 		$this->load->view('template_home/navbar');
-        $this->load->view('home/polo');
+        $this->load->view('home/polo', $data);
 		$this->load->view('template_home/footer');
 	}
 }
